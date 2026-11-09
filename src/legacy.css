@@ -1,0 +1,162 @@
+/* colours */
+:root{
+  --primary: #ff1818;
+  --secondary: #7a7979;
+  --title: #FFFFFF;
+}
+
+/* layout styles */
+nav{
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+}
+nav a{
+  text-transform: uppercase;
+  color: var(--title);
+}
+nav a span{
+  font-weight: bold;
+}
+nav .sidenav-trigger{
+  margin: 0;
+}
+
+/* styles */
+.content{
+  margin-top: 20px;
+}
+.card-panel{
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.content img{
+  grid-area: image;
+  max-width: 60px;
+}
+
+.content-title{
+  font-weight: bold;
+}
+.content-text{
+  font-size: 0.8em;
+}
+
+.content-main{
+  margin-top: 50px;
+}
+
+.social-icons {
+  width: 25px;
+  height: 25px;
+  opacity: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Styles */
+
+.prompt {
+  display: none;
+}
+
+.content-button {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-button:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.content-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* form-styles */
+.add-btn{
+  background: var(--title) !important;
+}
+
+input{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button{
+  background: var(--title);
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+.register-submit-btn {
+  background: var(--primary) !important;
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+form .input-field{
+  margin-top: 30px;
+}
+
+.datepicker-date-display {
+    background-color: #ee6e73;
+}
+
+.datepicker-cancel, .datepicker-done, .datepicker-day-button {
+    color: #ee6e73;
+}
+
+
+
+/* working pop up modal */
+.wrapper {
+  font-weight: lighter;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .item {
+  max-width: 80%;
+}
+.a2hs__container {
+  animation: slideUp 0.7s ease;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(240px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
